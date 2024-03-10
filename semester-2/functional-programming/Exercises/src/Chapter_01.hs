@@ -111,9 +111,11 @@ Completed 2 action(s).
 double (double 2)
 = {applying the inner double}
 double (2 + 2)
-= {applying the inner +}
-double (4)
-= {applying the outer double}
+= {applying double}
+(2 + 2) + (2 + 2)
+= {applying fiest +}
+4 + (2 + 2)
+= {applying second + }
 4 + 4
 = {applying the +}
 8
