@@ -16,7 +16,7 @@ factorial n = product [1..n]
 
 average ns = sum ns `div` length ns
 
-$ ghci src/test.hs
+\$ ghci src/test.hs
 GHCi, version 9.4.8: https://www.haskell.org/ghc/  :? for help
 [1 of 2] Compiling Main             ( src/test.hs, interpreted )
 Ok, one module loaded.
@@ -37,11 +37,10 @@ ghci>
 -- Parenthesize the following numeric expressions:
 
 e_2_2_a :: Int
-e_2_2_a = ( 2^3 ) * 4
+e_2_2_a = (2 ^ 3) * 4
 
 e_2_2_b :: Int
-e_2_2_b = ( 2 * 3 ) + ( 4 * 5 )
+e_2_2_b = (2 * 3) + (4 * 5)
 
 e_2_2_c :: Int
-e_2_2_c = 2 + ( 3 * ( 4^5 ) )
-
+e_2_2_c = 2 + (3 * (4 ^ 5))
