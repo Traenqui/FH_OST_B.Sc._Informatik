@@ -13,19 +13,14 @@ module Chapter_04 where
 
 safeTailA :: [a] -> [a]
 safeTailA xs = if null xs then xs else tail xs
--- safeTailA = undefined
 
 safeTailB :: [a] -> [a]
 safeTailB xs | null xs   = xs
              | otherwise = tail xs
--- safeTailB = undefined
 
 safeTailC :: [a] -> [a]
 safeTailC [] = []
 safeTailC (_:xs) = xs
--- safeTailC = undefined
-
-
 
 
 -- Exercise 4.7 (**)
@@ -34,7 +29,4 @@ safeTailC (_:xs) = xs
 --     mult x y z = x*y*z
 
 mult :: Int -> (Int -> (Int -> Int)) 
--- mult = ???
 mult = \x -> (\y -> (\z -> x * y * z))
-
-

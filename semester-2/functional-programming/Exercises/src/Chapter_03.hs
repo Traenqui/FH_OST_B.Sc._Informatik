@@ -19,7 +19,7 @@ e3_1_3 = [(False,'O'),(True,'1')]
 e3_1_4 :: ([Bool], [Char])
 e3_1_4 = ([False,True],['0','1'])
 
-e3_1_5 :: [([a] -> [a])]
+e3_1_5 :: [[a] -> [a]]
 e3_1_5 = [tail, init, reverse]
 
 
@@ -52,7 +52,7 @@ apply f x = f x
 -- Note: Please replace the `???` and uncomment your answers and the function definitions in order for them to be checked by the compiler.
 
 second :: [a] -> a
-second xs = head (tail xs) 
+second xs = head (tail xs)
 
 swap :: (a, b) -> (b, a)
 swap (x,y) = (y,x)
@@ -65,7 +65,7 @@ double x = x*2
 
 -- (Eq a) type contraint, type a must support equality comparisons
 palindrome :: Eq a => [a] -> Bool
-palindrome xs = reverse xs == xs 
+palindrome xs = reverse xs == xs
 
 twice :: (a -> a) -> a -> a
 twice f x = f (f x)
